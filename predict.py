@@ -61,7 +61,7 @@ if __name__ == '__main__':
 
     for i in range(args.top_k):
         if (cat_to_name is not None):
-            logger.info(f'{i+1}. {cat_to_name[str(top_indices[0][i])]} {top_values[0][i]:.5f}')
+            logger.info(f'{i+1}. {cat_to_name[str(top_indices[0][i] + 1)]} {top_values[0][i]:.5f}')
         else:
             logger.info(f'{i+1}. {top_indices[0][i]} {top_values[0][i]:.5f}')
     
